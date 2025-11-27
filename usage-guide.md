@@ -13,12 +13,6 @@ This guide explains how to configure and use the LanSchool Student deployment sc
     SET CHANNEL=803
     ```
 
-### Update the MSI Path (if needed)
-- Ensure the path to `Student.msi` matches your deployment share:
-  ```bat
-  msiexec.exe /i "\\sccm2\deployment\Software\LanSchool-GPO-Files\Student.msi" ...
-  ```
-
 ### Save and distribute the customized script for each room as needed.
 
 ## 2. Group Policy Deployment
@@ -47,7 +41,7 @@ This guide explains how to configure and use the LanSchool Student deployment sc
    - On a target machine, run `gpupdate /force` to apply the new policy immediately.
 
 ## 3. Best Practices
-- Use a separate GPO for each room or deployment group.
+- Use a separate GPO for each room.
 - Double-check the `CHANNEL` variable for each script to avoid channel conflicts.
 - Keep a record of channel assignments and GPO names for troubleshooting.
 - Monitor `C:\LanSchoolInstall.log` on client machines for installation results.
