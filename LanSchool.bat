@@ -4,7 +4,7 @@ SET CHANNEL=803
 
 REM Install LanSchool Student if not already installed
 IF NOT EXIST "C:\Program Files (x86)\LanSchool\student.exe" (
-	msiexec.exe /i "\\sccm2\Deployment\Software\LanSchool\latest\Student.msi" /qn ADVANCED_OPTIONS=1 STEALTH_MODE=1 NO_KEYBOARD_MONITORING_MODE=1 NO_INTERNET_MONITORING_MODE=1 CHANNEL=%CHANNEL% LCS=192.168.254.20
+	msiexec.exe /i "\\sccm2\deployment\Software\LanSchool-GPO-Files\Student.msi" /qn ADVANCED_OPTIONS=1 STEALTH_MODE=1 NO_KEYBOARD_MONITORING_MODE=1 NO_INTERNET_MONITORING_MODE=1 CHANNEL=%CHANNEL% LCS=192.168.254.20
 	IF %ERRORLEVEL% EQU 0 (
 		echo [%DATE% %TIME%] LanSchool Student install succeeded on %COMPUTERNAME% >> C:\LanSchoolInstall.log 2>nul
 	) ELSE (
