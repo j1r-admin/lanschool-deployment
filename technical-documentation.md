@@ -4,10 +4,9 @@
 This project provides a batch script and supporting documentation for the automated, unattended deployment of the LanSchool Student client to Windows 11 computers in a classroom or lab environment. The deployment is designed to be executed via Group Policy or similar machine-based automation tools.
 
 ## Components
-- **LanSchool.bat**: Main batch script for installing the LanSchool Student client.
-- **README.md**: User-facing documentation for setup, usage, and channel numbering.
-- **installation-overview.md**: High-level summary of the deployment process and options.
-- **original-lanSchool.bat**: (Read-only backup, not used in production)
+* **LanSchool.bat**: Main batch script for installing the LanSchool Student client.
+* **README.md**: User-facing documentation for setup, usage, and channel numbering.
+* **installation-overview.md**: High-level summary of the deployment process and options.
 
 ## Script Logic
 1. **Channel Assignment**
